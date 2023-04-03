@@ -13,7 +13,7 @@ main:
 	mv s0,a0	# Set s0 equal to the result
 	jal printMsg2
 	jal inputXN	# return the result a0	
-	mv s1,a0	# Set s1 equal to the result	
+	mv s1,a0	# Set s1 equal to the result 將s0的值丟給 s1
 	beq s1 zero up_zero_problem	###solve pow(?, 0) problem & consider pow(0, 0)
 	beq s0 zero down_zero_problem	### solve pow(0, ?) problem
 	mv a0,s0
